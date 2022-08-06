@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E1D5D5"
+
+    tools:context=".ui.cart.CartFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                app:contentPadding="5dp"
+                app:cardBackgroundColor="@color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ஆர்டர் விவரம் "
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="#F6F1F1"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/cart_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:background="#F6F1F1"
+                        android:gravity="end"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ஆர்டர் மதிப்பு: "
+
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:textColor="#000000"
+                            />
+                        <TextView android:id="@+id/cart_items_total"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rs.4350"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:background="#F6F1F1"
+                        android:gravity="end"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="டெலிவெரி கட்டணம் : "
+
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:textColor="#000000"
+                            />
+                        <TextView android:id="@+id/delivery_charges"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rs.30"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:background="#936C33"
+                        android:gravity="end"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="மொத்த மதிப்பு: "
+
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:textColor="#FFFFFF"
+                            />
+                        <TextView android:id="@+id/total_amount"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rs.4390"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:contentPadding="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="வாடிக்கையாளர் விவரங்கள்"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="#F6F1F1"
+                        android:textColor="@color/black"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="பயனர் பெயர்"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            />
+                        <EditText android:id="@+id/cart_customer_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="உங்கள் பெயரை உள்ளிடவும்"
+                            android:lines="1"
+                            android:inputType="text"
+                            android:textColorHint="#A59D9D"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="தொலைபேசி எண்"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            />
+                        <EditText android:id="@+id/cart_customer_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்"
+                            android:lines="1"
+                            android:inputType="phone"
+                            android:textColorHint="#A59D9D"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="டெலிவெரி  முகவரி"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            />
+                        <EditText android:id="@+id/cart_customer_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="டெலிவெரி முகவரியை உள்ளிடவும்"
+                            android:lines="3"
+                            android:textColorHint="#A59D9D"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Or"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <Button android:id="@+id/cart_get_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get Current Location"
+                            android:layout_marginTop="20dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* தேர்ந்தெடுக்கப்பட்ட லொகேஷனில் டெலிவரி செய்யப்படும்."
+                            android:textSize="14sp"
+
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* டெலிவரி நேரம் மாலை 5.00 மணி முதல் இரவு 9.00 மணி வரை மட்டுமே ."
+                            android:textSize="14sp"
+
+                            android:layout_marginTop="10dp"
+                            />
+<!--                        தேர்ந்தெடுக்கப்பட்ட லொகேஷனில் டெலிவரி செய்யப்படும்.-->
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:contentPadding="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="கட்டண விவரங்கள்"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="#F6F1F1"
+                        android:textColor="@color/black"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <RadioGroup android:id="@+id/radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RadioButton android:id="@+id/radio_cod"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cash on Delivery"
+                                android:textColor="@color/black"
+                                />
+                            <RadioButton android:id="@+id/radio_upi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pay With GPay/ Phone Pay/ Paytm \nUPI Number : 7402390313"
+                                android:textColor="@color/black"
+                                />
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button android:id="@+id/cart_action_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ஆர்டரை உறுதிப்படுத்தவும்"
+                android:textColor="@color/white"
+
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>

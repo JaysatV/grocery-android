@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.rice.mandi.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_brands"
+        android:name="com.rice.mandi.ui.brands.BrandsFragment"
+        android:label="@string/menu_brands"
+        tools:layout="@layout/brands_fragment" />
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.rice.mandi.ui.products.ProductsFragment"
+        android:label="@string/menu_products"
+        tools:layout="@layout/products_fragment" />
+
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.rice.mandi.ui.favourite.FavouriteFragment"
+        android:label="@string/menu_favourite"
+        tools:layout="@layout/favourite_fragment" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.rice.mandi.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/cart_fragment" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.rice.mandi.ui.orders.OrdersFragment"
+        android:label="@string/menu_orders"
+        tools:layout="@layout/orders_fragment" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.rice.mandi.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/notifications_fragment" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.rice.mandi.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.rice.mandi.ui.about.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/about_us_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.rice.mandi.ui.contact.ContactUsFragment"
+        android:label="@string/menu_contact_us"
+        tools:layout="@layout/contact_us_fragment" />
+</navigation>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#D2D4DF"
+        >
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:background="@drawable/profile_background"
+          />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_face"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            />
+    </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="பயனர் பெயர்"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText android:id="@+id/profile_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:textColorHint="#A59D9D"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="தொலைபேசி எண்"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText android:id="@+id/profile_customer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்"
+                    android:lines="1"
+                    android:inputType="phone"
+                    android:textColorHint="#A59D9D"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="டெலிவெரி  முகவரி"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText android:id="@+id/profile_customer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="டெலிவெரி முகவரியை உள்ளிடவும்"
+                    android:lines="3"
+                    android:textColorHint="#A59D9D"
+                    android:textColor="@color/black"
+
+                    />
+
+                <Button android:id="@+id/action_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="சேமிக்க"
+                    android:layout_marginTop="20dp"
+                    />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="@string/general">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/home"
+                    android:title="@string/menu_home" />
+
+                <item
+                    android:id="@+id/nav_brands"
+                    android:icon="@drawable/brand"
+                    android:title="@string/menu_brands" />
+
+                <item
+                    android:id="@+id/nav_products"
+                    android:icon="@drawable/products"
+                    android:title="@string/menu_products" />
+
+
+
+                <item
+                    android:id="@+id/nav_cart"
+                    android:icon="@drawable/cart"
+                    android:title="@string/menu_cart" />
+
+                <item
+                    android:id="@+id/nav_orders"
+                    android:icon="@drawable/orders"
+                    android:title="@string/menu_orders" />
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_notification"-->
+<!--                    android:icon="@drawable/notification"-->
+<!--                    android:title="@string/menu_notification" />-->
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile"
+                    android:title="@string/menu_profile" />
+                <item
+                    android:id="@+id/nav_signin"
+                    android:icon="@drawable/ic_login"
+                    android:title="@string/menu_signin" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_about_us"
+                    android:icon="@drawable/about"
+                    android:title="@string/menu_about_us" />
+
+                <item
+                    android:id="@+id/nav_contact_us"
+                    android:icon="@drawable/contact"
+                    android:title="@string/menu_contact_us" />
+
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.about.AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView android:id="@+id/about_us_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:text="தினசரி அத்தியாவசியப் பொருட்களுக்கான ஷாப்பிங் தொடர்பான அனைத்து மன அழுத்தத்தையும் நாங்கள் அகற்றிவிட்டோம், மேலும் நீங்கள் இப்போது உங்கள் வீட்டுப் பொருட்கள் அனைத்தையும் ஆர்டர் செய்யலாம் மற்றும் நீண்ட தூரம் பயணம் செய்யாமல் அல்லது வரிசையில் நிற்காமல் ஆன்லைனில் மளிகைப் பொருட்களையும் வாங்கலாம். இதனுடன், உங்கள் தேவைகள் அனைத்தையும் ஒரே மூலத்தில் கண்டறிவதற்கான வசதியையும் சேர்த்து, பெரும் சேமிப்பையும் சேர்த்து, இந்தியா மளிகைப் பொருட்களை வாங்கும் விதத்தில் புரட்சியை ஏற்படுத்தியுள்ளது என்பதை நீங்கள் உணர்வீர்கள். " />
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
